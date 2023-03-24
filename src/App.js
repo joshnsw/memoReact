@@ -19,20 +19,14 @@ const Main = () => {
 
   const [categoryid, setCategoryId] = useState();
 
-
   const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/;
 
-
-
   const isAccessInputValid = uuidRegex.test(input);
-
-
 
   const handleAccessInputChange = (event) => {
     setInput(event.target.value);
     console.log(input)
   };
-
 
   const getCategory = () => {
 
@@ -202,7 +196,6 @@ const Main = () => {
         </div>
       </nav>
 
-
     <div>
      <div className="row">
 
@@ -255,22 +248,15 @@ const Main = () => {
           <button type="submit" className="btn btn-danger mx-3" id="delete-memo"  onClick={() => {deleteMemo();setEditForm(true);}} disabled={!editform}>Delete</button>
           </div>
 
-
-
       </div>
-
 
      </div>
 
     </div>
-
-
-
       </>
   )
 
 }
-
 
 function App() {
   return (
